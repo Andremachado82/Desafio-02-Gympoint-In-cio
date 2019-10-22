@@ -7,15 +7,14 @@ class App {
 
     this.middlewares();
     this.routes();
-    
   }
 
-  middlewares(){
+  middlewares() {
     this.server.use(express.json());
   }
 
   routes() {
-    this.server.use(routes)
+    this.server.use(routes);
   }
 }
 
